@@ -1,11 +1,11 @@
 import styles from "./Player.module.css";
 import { useState } from "react";
 
-export function Player({ initialName, symbol }) {
+export function Player({ initialName, symbol, isActive }) {
   const [playerName, setPlayerName] = useState(initialName);
   const [isEditing, setIsEditing] = useState(false);
 
-  const { player, namePlayer, playerSymbol } = styles;
+  const { active, player, namePlayer, playerSymbol } = styles;
 
   function handleEditClick() {
     setIsEditing((editing) => !editing);
@@ -23,7 +23,7 @@ export function Player({ initialName, symbol }) {
     );
   }
   return (
-    <li>
+    <li className={isActive ? active : undefined}>
       <span className={player}>
         {editablePlayerName}
         <span className={playerSymbol}>{symbol}</span>

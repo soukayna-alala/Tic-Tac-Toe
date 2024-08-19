@@ -7,7 +7,7 @@
 
 .namePlayer {
   display: inline-block;
-  width: 10rem;
+  width: 8rem;
   font-size: 1rem;
   color: #e1dec7;
   text-transform: uppercase;
@@ -21,7 +21,7 @@
 .player input {
   font: inherit;
   font-size: 1rem;
-  width: 10rem;
+  width: 8rem;
   border: none;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
@@ -34,4 +34,34 @@
   margin-left: 1rem;
   font-size: 1rem;
   color: #e1dec7;
+}
+
+.active {
+  border-color: #f6e35a;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.active .namePlayer,
+.active .playerSymbol {
+  color: #f6e35a;
+}
+button {
+  width: 3rem;
+  border: none;
+  background: none;
+  color: #c3ba78;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0.5rem 0.25rem 0.25rem 0.25rem;
+  text-align: center;
+}
+
+button:hover {
+  color: #f8ca31;
+}
+
+li {
+  align-items: center;
+  border: 2px solid transparent;
 }

@@ -1,0 +1,42 @@
+header {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Caprasimo", cursive;
+  font-size: 3rem;
+  margin: 0 auto 1rem auto;
+  color: #3f3b00;
+  text-align: center;
+}
+
+#gameContainer {
+  max-width: 38rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 4px;
+  background: linear-gradient(#383624, #282617);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+#players {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#pre-game button {
+  cursor: pointer;
+  background: none;
+  color: #f8c031;
+  border: none;
+  font-family: "Caprasimo", cursive;
+  font-size: 4rem;
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  animation: pulse-text-size 2s infinite ease-out;
+}
