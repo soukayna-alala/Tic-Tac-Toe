@@ -12,13 +12,15 @@ export function Player({ initialName, symbol }) {
   }
 
   function handleChange(event) {
-    setIsEditing();
+    setPlayerName(event.target.value);
   }
 
   let editablePlayerName = <span className={namePlayer}>{playerName}</span>;
 
   if (isEditing) {
-    editablePlayerName = <input type="text" required value={playerName} />;
+    editablePlayerName = (
+      <input type="text" required value={playerName} onChange={handleChange} />
+    );
   }
   return (
     <li>
