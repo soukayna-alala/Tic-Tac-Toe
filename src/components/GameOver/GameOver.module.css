@@ -26,7 +26,7 @@
   color: #e1dec7;
 }
 
-button {
+#gameOver button {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
@@ -41,7 +41,7 @@ button {
   box-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
 }
 
-button:hover {
+#gameOver button:hover {
   background: #fcd256;
   color: #3f3b00;
   transform: scale(1.1);

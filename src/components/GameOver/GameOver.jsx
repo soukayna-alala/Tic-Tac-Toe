@@ -1,6 +1,6 @@
 import Styles from "./GameOver.module.css";
 
-export function GameOver({ winner }) {
+export function GameOver({ winner, onRestart }) {
   const { gameOver } = Styles;
 
   return (
@@ -10,7 +10,7 @@ export function GameOver({ winner }) {
       {!winner && <p> It&apos;s a draw</p>}
 
       <p>
-        <button>Rematch!</button>
+        <button onClick={onRestart}>Rematch!</button>
       </p>
     </div>
   );
